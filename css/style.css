@@ -1,4 +1,76 @@
-body {
-  color: black;
+header {
+  background: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+}
+header nav {
+  height: 100px;
+}
+header .navbar-brand {
+  margin-right: 38px;
+}
+header .navbar-light .navbar-nav .nav-item.dropdown {
+  position: relative;
+  z-index: 1;
+}
+header .navbar-light .navbar-nav .nav-item .nav-link {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding: 0 22px;
+}
+header .navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: #00AC4E;
+}
+header .dropdown-toggle::after {
+  display: none;
+}
+header .dropdown-menu {
+  background: #FFFFFF;
+  box-shadow: 0 0 15px rgb(0 0 0%);
+  border-radius: 12px;
+  border: none;
+  min-width: auto;
+  padding: 53px 0 0;
+  margin: 0;
+  top: -14px;
+  z-index: -1;
+}
+header .dropdown-menu .dropdown-item {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  padding: 8px 20px 8px 24px;
+}
+header .dropdown-menu .dropdown-item span {
+  width: 20px;
+  text-align: center;
+  margin-right: 7px;
+}
+header .nav_right .phone {
+  margin-right: 65px;
+}
+header .nav_right .phone a {
+  text-decoration: none;
+}
+header .nav_right .phone a span {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+}
+header .nav_right .user button {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  margin-right: 30px;
 }
 /*# sourceMappingURL=style.css.map */

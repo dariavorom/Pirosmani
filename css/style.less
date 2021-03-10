@@ -1,3 +1,81 @@
-body {
-  color: black;
+.font-header(@color) {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: @color;
+}
+
+header {
+  background: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+  nav {
+    height: 100px;
+  }
+  .navbar-brand {
+    margin-right: 38px;
+  }
+  .navbar-light .navbar-nav .nav-item {
+    &.dropdown {
+      position: relative;
+      z-index: 1;
+    }
+    .nav-link {
+      .font-header(#333333);
+      padding: 0 22px;
+      &:hover {
+        color: #00AC4E;
+      }
+    }
+
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .dropdown-menu {
+    background: #FFFFFF;
+    box-shadow: 0 0 15px rgb(0 0 0 / 12%);
+    border-radius: 12px;
+    border: none;
+    min-width: auto;
+    padding: 53px 0 0;
+    margin: 0;
+    top: -14px;
+    z-index: -1;
+    .dropdown-item {
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 13px;
+      color: #333333;
+      display:flex;
+      align-items: center;
+      padding: 8px 20px 8px 24px;
+      span {
+        width: 20px;
+        text-align: center;
+        margin-right: 7px;
+      }
+    }
+  }
+  .nav_right {
+    .phone {
+      margin-right: 65px;
+      a {
+        text-decoration: none;
+        span {
+          .font-header(#000);
+        }
+      }
+    }
+    .user {
+      button {
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 0;
+        margin-right: 30px;
+      }
+    }
+  }
 }
