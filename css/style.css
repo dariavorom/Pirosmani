@@ -7,6 +7,7 @@ header nav {
 }
 header .navbar-brand {
   margin-right: 38px;
+  padding-bottom: 0.66rem;
 }
 header .navbar-light .navbar-nav .nav-item.dropdown {
   position: relative;
@@ -19,7 +20,7 @@ header .navbar-light .navbar-nav .nav-item .nav-link {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding: 0 22px;
+  padding: 0 23px;
 }
 header .navbar-light .navbar-nav .nav-item .nav-link:hover {
   color: #00AC4E;
@@ -75,8 +76,12 @@ header .nav_right .user button {
   padding: 0;
   margin-right: 30px;
 }
-.banner .row {
-  margin: 0;
+.banner {
+  margin-bottom: 11px;
+  overflow: hidden;
+}
+.banner .swiper-container {
+  z-index: 0;
 }
 .banner .swiper-container .swiper-slide {
   background: linear-gradient(180deg, #F1F1FB 0%, #EBEBF5 100%);
@@ -87,7 +92,7 @@ header .nav_right .user button {
   margin-top: 60px;
   overflow: hidden;
   position: relative;
-  padding: 44px 54px;
+  padding: 40px 43px;
 }
 .banner .swiper-container .swiper-slide img {
   position: absolute;
@@ -110,22 +115,6 @@ header .nav_right .user button {
   line-height: 24px;
   color: #828282;
 }
-.banner .swiper-container .swiper-slide a {
-  display: block;
-  width: 217px;
-  height: 53px;
-  background: #00AC4E;
-  border-radius: 4px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 53px;
-  font-family: TT Norms Pro;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  color: #FFFFFF;
-  margin-top: 31px;
-}
 .banner .swiper-container .swiper-pagination-bullet {
   background: #C4C4C4 !important;
   opacity: 1 !important;
@@ -135,5 +124,336 @@ header .nav_right .user button {
   height: 8px;
   background: #FFFFFF !important;
   border-radius: 3px !important;
+}
+.btn-big {
+  display: block;
+  width: 217px;
+  height: 53px;
+  background: #00AC4E;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 53px;
+  color: #FFFFFF;
+  font-family: TT Norms Pro;
+  font-weight: 500;
+  margin-top: 31px;
+  cursor: pointer;
+}
+.btn-big:hover {
+  color: #FFFFFF;
+  background: limegreen;
+}
+.menu .swiper-wrapper .swiper-slide {
+  width: auto !important;
+}
+.menu .swiper-wrapper .swiper-slide a {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  color: #4F4F4F;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 95px;
+}
+.menu .swiper-button-next,
+.menu .swiper-container-rtl .swiper-button-prev {
+  right: 0;
+  justify-content: flex-end;
+}
+.menu .swiper-button-next:after,
+.menu .swiper-container-rtl .swiper-button-prev:after {
+  content: '';
+  background: #fff url("../images/arrow-right.png") center no-repeat;
+  width: 15px;
+  height: 25px;
+}
+.products {
+  margin-top: 30px;
+}
+.products h3 {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 39px;
+}
+.products .products-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+.products .products-wrapper .product {
+  width: 205px;
+  margin-bottom: 51px;
+}
+.products .products-wrapper .product .product-img {
+  width: 205px;
+  height: 126px;
+  background: #E5E5E5 url("../images/product.png") center no-repeat;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.products .products-wrapper .product .product-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.products .products-wrapper .product .title {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  margin: 8px 0 5px;
+}
+.products .products-wrapper .product .description {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 19px;
+  color: #000000;
+  margin: 0 !important;
+  letter-spacing: 0.02rem;
+}
+.products .products-wrapper .product .price b {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  font-weight: 500;
+  margin-right: 15px;
+}
+.products .products-wrapper .product .price span {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 23px;
+  color: #828282;
+}
+.products .products-wrapper .product .to-cart {
+  display: block;
+  width: 140px;
+  height: 38px;
+  background: #00AC4E;
+  border-radius: 4px;
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  margin: 12px 0 4px;
+}
+.products .products__pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: -12px;
+}
+.products .products__pagination .page-link {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000;
+  font-weight: 500;
+  border: none !important;
+  border-radius: 5px !important;
+  width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .products__pagination .page-link:hover {
+  background: #00AC4E !important;
+  color: #FFFFFF;
+}
+.products .products__pagination .page-item.active .page-link {
+  background: #00AC4E !important;
+}
+.video .video1440 {
+  max-width: 1440px;
+  margin: 42px auto 60px auto;
+  background: url(../images/video-bg.jpg) center / cover no-repeat;
+}
+.video .video1440 .ratio.ratio-16x9 {
+  height: 648px;
+}
+.video .video1440 .ratio .video__play {
+  cursor: pointer;
+  width: 126px;
+  height: auto;
+  top: calc(50% - 63px);
+  left: calc(50% - 63px);
+}
+.delivery {
+  height: 250px;
+  width: 100%;
+}
+.delivery .delivery__content {
+  display: flex;
+  justify-content: space-between;
+  background: #F2F2F2;
+  box-shadow: 0px 0px 18.0727px rgba(0, 0, 0, 0.03);
+  border-radius: 18px;
+  padding: 31px 0 13px 40px;
+}
+.delivery .delivery__content .delivery__text {
+  width: 480px;
+}
+.delivery .delivery__content .delivery__text .delivery__title {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #333333;
+}
+.delivery .delivery__content .btn-big {
+  width: 171px;
+}
+footer {
+  background: #00AC4E;
+  height: 300px;
+  padding: 34px 0;
+  margin-top: 60px;
+}
+footer .footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer__wrapper .footer__left .phones {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer__wrapper .footer__left .phones .phones__item {
+  display: flex;
+  flex-direction: column;
+  width: 168px;
+}
+footer .footer__wrapper .footer__left .phones .phones__item:first-child {
+  margin-right: 60px;
+}
+footer .footer__wrapper .footer__left .phones .phones__item span {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+footer .footer__wrapper .footer__left .phones .phones__item a {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-decoration: none;
+}
+footer .footer__wrapper .footer__left .work-time {
+  margin-top: 20px;
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 32px;
+  color: #FFFFFF;
+  letter-spacing: 0.1px;
+}
+footer .footer__wrapper .footer__left .email {
+  display: flex;
+  flex-direction: column;
+  margin-top: 11px;
+}
+footer .footer__wrapper .footer__left .email a {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer .footer__wrapper .footer__left .email a.help {
+  line-height: 46px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+footer .footer__wrapper .footer__center .social {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__wrapper .footer__center .social a {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-weight: 500;
+  letter-spacing: 3.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+footer .footer__wrapper .footer__center .social a:first-child {
+  margin-bottom: 26px;
+}
+footer .footer__wrapper .footer__right .person a {
+  text-decoration: none;
+}
+footer .footer__wrapper .footer__right .person a span {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+footer .footer__wrapper .footer__right .person a img {
+  margin-right: 4px;
+}
+footer .footer__bottom .copy {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+footer .footer__bottom .link {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer .footer__bottom > * {
+  margin-right: 30px;
 }
 /*# sourceMappingURL=style.css.map */
