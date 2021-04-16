@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+let swiper1 = new Swiper('.swiper-container.banner', {
     // Optional parameters
     slidesPerView: 1,
     direction: 'horizontal',
@@ -11,14 +11,17 @@ const swiper = new Swiper('.swiper-container', {
         clickable: 'true',
     },
 
-    // Navigation arrows
+});
+let swiper2 = new Swiper('.swiper-container.menu', {
+    // Optional parameters
+    slidesPerView: 'auto',
+    direction: 'horizontal',
     navigation: {
         nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
     },
 });
+
+document.querySelector(".video__play").addEventListener("click", function () {
+    document.querySelector(".video__play").style.display = "none";
+    document.querySelector(".yt-video").setAttribute("src", "https://www.youtube.com/embed/EGdtKlmD8Kg?autoplay=1");
+})
